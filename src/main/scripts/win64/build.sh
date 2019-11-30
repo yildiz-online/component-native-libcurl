@@ -23,7 +23,8 @@
 cd ../../c++
 ./configure --prefix=../../target/classes/win64/
 make
-make install
+
+ls -l
 
 r1=$?
 
