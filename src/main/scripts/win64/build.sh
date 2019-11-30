@@ -20,7 +20,8 @@
 #-DCMAKE_INSTALL_PREFIX="../../../../target/classes/win64" \
 #-DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
-./configure --prefix=../../../../../target/classes/win64/
+cd ../../c++
+./configure --prefix=../../target/classes/win64/
 make
 make install
 
