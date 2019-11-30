@@ -15,12 +15,15 @@
 
 #exit ${r1}
 
-cmake ../../c++ \
--DCMAKE_BUILD_TYPE=Release \
--DCMAKE_INSTALL_PREFIX="../../../../target/classes/win64" \
--DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
+#cmake ../../c++ \
+#-DCMAKE_BUILD_TYPE=Release \
+#-DCMAKE_INSTALL_PREFIX="../../../../target/classes/win64" \
+#-DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
+./configure --prefix=../../../../../target/classes/win64/
+make
 make install
+
 r1=$?
 
 make clean
