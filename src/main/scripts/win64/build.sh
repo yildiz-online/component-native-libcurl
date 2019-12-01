@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd ../../c++
-./configure
+./configure --disable-shared --enable-static
 make
 
 make install
