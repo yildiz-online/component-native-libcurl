@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd ../../c++
-./configure --disable-shared --enable-static --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
+./configure --disable-shared --enable-static --disable-ldap --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
 make
 
 make install
