@@ -10,6 +10,9 @@ make install
 
 r1=$?
 
+cd /src/src/main/scripts/win64/libidn2/win64/lib
+ls -l
+
 mkdir -p /src/target/classes/win64/lib
 mkdir -p /src/target/classes/win64/include
 cp /usr/local/lib/libcurl.a /src/target/classes/win64/lib
