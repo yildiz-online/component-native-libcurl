@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export $ LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" CFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include"
+export $ LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" CFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include" CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include"
 
 cd ../../c++
 ./configure --disable-shared --enable-static --disable-ldap --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
