@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libiconv/win64/lib#g' /src/src/main/scripts/win64/libiconv/win64/lib/libidn2.la
+sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libidn2/win64/lib#g' /src/src/main/scripts/win64/libidn2.la/win64/lib/libidn2.la
 export $ LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include"
 
 cd ../../c++
