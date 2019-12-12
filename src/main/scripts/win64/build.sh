@@ -4,7 +4,7 @@ sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libidn2/win6
 export $ LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include"
 
 cd ../../c++
-./configure --disable-shared --enable-static --disable-ldap --without-libidn --with-libidn2 --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
+./configure --disable-shared --enable-static --disable-ldap --without-libidn --with-libidn2=/src/src/main/scripts/win64/libidn2/win64 --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
 make
 
 make install
