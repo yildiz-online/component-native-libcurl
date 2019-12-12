@@ -11,7 +11,9 @@ make install
 
 r1=$?
 
-cd /usr/local
+cd /usr/local/lib
+ls -l
+cd /usr/local/include
 ls -l
 
 mkdir -p /src/target/classes/win64/lib
