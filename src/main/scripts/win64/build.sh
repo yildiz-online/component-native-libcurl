@@ -4,7 +4,7 @@ cp -r /src/src/main/scripts/win64/libidn2/win64/lib /usr/local
 cp -r /src/src/main/scripts/win64/libidn2/win64/include /usr/local
 
 cd ../../c++
-./configure --disable-shared --enable-static --disable-ldap --with-libidn2 --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
+./configure --disable-shared --enable-static --disable-ldap --with-winidn --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
 make
 
 make install
