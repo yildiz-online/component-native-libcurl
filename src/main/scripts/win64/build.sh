@@ -3,7 +3,7 @@
 sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libidn2/win64/lib#g' /src/src/main/scripts/win64/libidn2/win64/lib/libidn2.la
 
 cd ../../c++
-./configure --disable-shared --enable-static --disable-ldap --without_winidn --without-libidn --with-libidn2=/src/src/main/scripts/win64/libidn2/win64/ --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
+./configure --disable-shared --enable-static --disable-ldap --with-libidn2=/src/src/main/scripts/win64/libidn2/win64/ --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
 make
 
 make install
