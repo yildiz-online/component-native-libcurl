@@ -3,6 +3,8 @@
 cp -r /src/src/main/scripts/win64/libidn2/win64/lib /usr/local
 cp -r /src/src/main/scripts/win64/libidn2/win64/include /usr/local
 
+export CPPFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" LIBS="-lidn2"
+
 cd ../../c++
 ./configure --disable-shared --enable-static --disable-ldap --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
 make
