@@ -14,6 +14,7 @@ cmake ../../c++ \
 -DBUILD_SHARED_LIBS="OFF" \
 -DCURL_DISABLE_LDAP="ON" \
 -DCURL_DISABLE_LDAPS="ON" \
+-DSSL_ENABLED="OFF" \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_COLOR_MAKEFILE=on \
 -DCMAKE_INSTALL_PREFIX="../../../../target/classes/win64" \
