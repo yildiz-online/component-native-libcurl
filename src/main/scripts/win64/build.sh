@@ -18,6 +18,7 @@ cmake ../../c++ \
 -DCURL_CA_PATH=none \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_COLOR_MAKEFILE=on \
+-DIDN2_INCLUDE_DIR="/src/src/main/scripts/win64/libunistring/win64/include" \
 -DCMAKE_INSTALL_PREFIX="../../../../target/classes/win64" \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
