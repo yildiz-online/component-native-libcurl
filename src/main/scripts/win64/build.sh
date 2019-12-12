@@ -11,7 +11,7 @@ make install
 
 r1=$?
 
-cd /src/src/main/scripts/win64/libidn2/win64/lib
+cd /usr/local
 ls -l
 
 mkdir -p /src/target/classes/win64/lib
