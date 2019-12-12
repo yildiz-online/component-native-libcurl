@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libidn2/win64/lib#g' /src/src/main/scripts/win64/libidn2/win64/lib/libidn2.la
-export $ LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include" IDN_LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" IDN_CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include" 
+export $ LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include" IDN_DIR="/src/src/main/scripts/win64/libidn2/win64/" IDN_LDFLAGS="-L/src/src/main/scripts/win64/libidn2/win64/lib" IDN_CPPFLAGS="-I/src/src/main/scripts/win64/libidn2/win64/include" 
 
 cd ../../c++
 ./configure --disable-shared --enable-static --disable-ldap --without-libidn --with-libidn2=/src/src/main/scripts/win64/libidn2/win64/ --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32
